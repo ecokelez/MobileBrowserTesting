@@ -15,7 +15,7 @@ public class ChromeMobileTesting {
         caps.setCapability("platformName","Android");
         caps.setCapability("platformVersion","10.0");
         caps.setCapability("deviceName","Pixel 4");
-        caps.setCapability("appPackage","/system/product/app/Chrome/Chrome.apk");
+        caps.setCapability("appPackage","com.android.chrome");
         caps.setCapability("appActivity","com.google.android.apps.chrome.Main");
 
         AndroidDriver<AndroidElement> driver = new AndroidDriver<>(new URL("http://localhost:4723/wd/hub"),caps);
